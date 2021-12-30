@@ -4,13 +4,13 @@
   background-color: #0a192f;
 }
 .logo {
-  width: 9%;
+  width: 7%;
 }
 .navContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 30%;
+  width: 40%;
   justify-content: space-around;
 }
 .navList {
@@ -18,11 +18,14 @@
 }
 .navContainer .navList li {
   color: #64ffda;
-  padding-right: 12%;
+  padding-right: 20%;
 }
 a {
   text-decoration: none;
   color: #ccd6f6;
   font-family: "Inter";
   font-size: 16px;
+}
+a:hover {
+  color: #64ffda;
 }
