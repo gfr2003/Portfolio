@@ -1,27 +1,64 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
+* {
+  padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+.headerContainer {
+  display: flex;
+  background-color: #0a192f;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px;
+  background: linear-gradient(68.15deg, #0a192f 16.62%, #06347a 85.61%);
 }
 
-#container a {
-  text-decoration: none;
+.cabecalhoImagem img {
+  max-width: 100px;
+  max-height: 90px;
+  width: auto;
+  height: auto;
+}
+.cabecalhoMenu {
+  display: flex;
+  gap: 20px;
+}
+
+.menuPrincipal {
+  background: linear-gradient(68.15deg, #0a192f 16.62%, #06347a 85.61%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.gradient {
+  background-size: 400% 400%;
+  background-image: linear-gradient(-45deg, #ffffff, #06347a, #0a4fb8);
+  color: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: Gradient 4s ease infinite;
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+p {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.menuPrincipalTexto h1 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
 }
