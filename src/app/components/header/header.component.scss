@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.headerContainer {
+  height: 80px;
+  background-color: #0a192f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  background: linear-gradient(68.15deg, #0a192f 16.62%, #06347a 85.61%);
+  @media only screen and (max-width: 768px) {
+    padding: 0 20px;
+  }
+}
+
+.headerImg {
+  width: 25%;
+  @media only screen and (min-width:768px){
+    width: 8%;
+  }
+}
+.menuItem{
+    color: #fff;
+  }
+  @keyframes test{
+    0%{color:rgb(255, 255, 255);}
+    50%{color:rgb(57, 209, 247);}
+    100%{color:rgb(255, 255, 255)}
+    }
+.menuItem:hover{
+    animation-name: test;
+    animation-duration: 1s;
+    cursor: pointer;
+  }
+.cabecalhoMenu {
+  display: flex;
+  gap: 20px;
+  @media only screen and (max-width:768px){
+    display:none
+  }
+}
+
+
+
