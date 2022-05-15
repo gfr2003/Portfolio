@@ -48,4 +48,13 @@
 }
 
 
+.bounce-top {
+  color: #ffff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  }
+  .bounce-top:hover {
+  transform: scale(1.1);
+  }
 
