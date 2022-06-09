@@ -1,9 +1,8 @@
-
 <app-header></app-header>
-<ion-content >
+<ion-content>
   <div class="body">
     <section class="home" id="home">
-      <div class="menuPrincipalTexto">
+      <div class="menuText">
         <div class="typewriter"><h1>Gustavo Félix</h1></div>
 
         <p class="gradient">Hi! I am Developer Full Stack</p>
@@ -12,14 +11,40 @@
         <img src="../.././assets/gustavo_felix.JPG" />
       </div>
     </section>
-    <section class="menuPrincipal" id="home">
-      <div class="menuPrincipalTexto">
-        <div class="typewriter"><h1>Gustavo Félix</h1></div>
+    <section class="About" id="about">
+      <!-- <span class="menuText">Sobre</span> -->
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="../../assets/dev-finance.png" style="width: 100%; height: 350px;" />
+          <div class="text">Dev Finance$</div>
+        </div>
 
-        <p class="gradient">Hi! I am Developer Full Stack</p>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="../../assets/petshop.png" style="width: 100% ; max-height: 350px;" />
+          <div class="text">Pet Shop Dev</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="../../assets/devPizza.png" style="width: 100%; max-height: 350px;" />
+          <div class="text">Dev Pizza</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+        <a class="next" (click)="plusSlides(1)">&#10095;</a>
       </div>
-      <div class="circle">
-        <img src="../.././assets/gustavo_felix.JPG" />
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" (click)="currentSlide(1)"></span>
+        <span class="dot" (click)="currentSlide(2)"></span>
+        <span class="dot" (click)="currentSlide(3)"></span>
       </div>
     </section>
   </div>
