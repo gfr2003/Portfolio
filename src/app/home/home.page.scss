@@ -1,19 +1,18 @@
-// * {
-//   padding: 0;
-//   margin: 0;
-//   box-sizing: border-box;
-//   font-family: "Inter", sans-serif;
-// }
+h2 {
+  color: #27b1bf;
+}
+
 .typewriter {
   display: flex;
 }
 .typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid white; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  letter-spacing: 0.15em; /* Adjust as needed */
+  color: #27b1bf;
+  overflow: hidden;
+  border-right: 0.15em solid #27b1bf;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
   animation: typing 1s steps(40, end), blink-caret 0.75s step-end infinite;
-  width: 35%;
+  // width: 35%;
 }
 @keyframes typing {
   from {
@@ -29,7 +28,7 @@
     border-color: transparent;
   }
   50% {
-    border-color: white;
+    border-color: #27b1bf;
   }
 }
 .circle {
@@ -40,51 +39,36 @@
   overflow: hidden;
   position: relative;
   margin: 40px;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .circle img {
   position: absolute;
   bottom: -1;
   background-size: cover;
-}
-// .headerContainer {
-//   display: flex;
-//   background-color: #0a192f;
-//   justify-content: space-around;
-//   align-items: center;
-//   padding: 12px;
-//   background: linear-gradient(68.15deg, #0a192f 16.62%, #06347a 85.61%);
-// }
-
-// .cabecalhoImagem img {
-//   max-width: 100px;
-//   max-height: 90px;
-//   width: auto;
-//   height: auto;
-// }
-// .cabecalhoMenu {
-//   display: flex;
-//   gap: 20px;
-// }
-.body {
-  background: linear-gradient(68.15deg, #0a192f 16.62%, #06347a 85.61%);
-  width: 100%;
-  height: 100%;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 }
 .home {
-  // background: linear-gradient(68.15deg, #0a192f 16.62%, #06347a 85.61%);
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background: #176585;
 }
 .gradient {
   background-size: 400% 400%;
-  background-image: linear-gradient(-45deg, #ffffff, #06347a, #0a4fb8);
+  background-image: linear-gradient(-45deg, #36cecc, #27b1bf, #176585);
   color: black;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: Gradient 4s ease infinite;
+  animation: Gradient 3s ease infinite;
+  @media only screen and (max-width: 768px) {
+    padding: 10px;
+  }
 }
 @keyframes Gradient {
   0% {
@@ -104,30 +88,29 @@ p {
   line-height: 1.1;
 }
 
-.menuText{
+.menuText {
   font-size: 30px;
   color: #fff;
-
+  margin-left: 10px;
 }
 
-/*ashfdjahkdjakhdk*/
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box;
+}
 
-/* Slideshow container */
 .slideshow-container {
   height: 100%;
-  max-width: 1000px;
+  max-width: 600px;
   position: relative;
   margin: auto;
 }
 
-/* Hide the images by default */
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -142,30 +125,27 @@ p {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: #ccc;
 }
 
-/* Caption text */
 .text {
   color: #ffff;
   font-weight: bold;
   font-size: 18px;
   padding: 8px 12px;
-  // position: absolute;
+
   bottom: 8px;
   width: 100%;
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
 .numbertext {
   color: #0a4fb8;
   font-size: 12px;
@@ -174,7 +154,6 @@ p {
   top: 0;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -186,17 +165,69 @@ p {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about span {
+  color: #888888;
+  font-size: 18px;
+}
+.aboutText {
+  display: flex;
+  // width: 50%;
+  text-align: left;
+  @media only screen and (max-width: 1280px) {
+    margin: 0px 100px 0px 100px;
+  }
+}
+.infoContainer {
+  max-width: 700px;
+  padding-bottom: 10px;
+  @media only screen and (max-width: 768px) {
+    margin: 0px 10px 0px 10px;
+  }
+}
+button{
+display: inline-block;
+font-family: "poppins-bold", sans-serif;
+font-size: 1.4rem;
+text-transform: uppercase;
+letter-spacing: .3rem;
+height: 5.4rem;
+line-height: 5.4rem;
+padding: 0 3rem;
+margin: 0 0.3rem 1.2rem 0;
+background: #d8d8d8;
+color: #002B33;
+text-decoration: none;
+cursor: pointer;
+text-align: center;
+white-space: nowrap;
+border: none;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-webkit-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+border-radius: 10px;
 }
