@@ -1,5 +1,27 @@
 <ion-app>
-  <app-header></app-header>
-
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu class="menuMobile" side="end" menuId="first" contentId="main">
+    <ion-content>
+      <div class="menuMobileContainer">
+        <div class="menuHeader">
+          <ion-icon
+            name="close-outline"
+            class="closeMenuMobile"
+            (click)="closeMenu()"
+          ></ion-icon>
+          <div class="menuOptionsContainer">
+           <span class="mobileMenuItem" (click)="goTo('home')">Sobre </span>
+            <span class="mobileMenuItem" (click)="goTo('')">Formação</span>
+            <span class="mobileMenuItem" (click)="goTo('')">Projetos</span>
+            <span class="mobileMenuItem" (click)="goTo('')">Contato</span>
+          </div>
+        </div>
+        <div class="socialContainer">
+          <a class="anchors"href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+          <a class="anchors" href=""><ion-icon name="logo-github"></ion-icon></a>
+          <a class="anchors" href=""><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+      </div>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
