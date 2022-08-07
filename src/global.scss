@@ -27,3 +27,34 @@
 *{
   font-family: 'Inter'
 }
+* {
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  button,
+  a {
+    outline: none;
+  }
+
+  // font-family: 'Montserrat', sans-serif;
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 9px;
+  }
+
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+  }
+
+ 
+}
