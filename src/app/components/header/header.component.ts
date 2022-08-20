@@ -15,7 +15,11 @@ export class HeaderComponent implements OnInit {
   openMenu() {
     this.menu.open('first');
   }
-  goTo(path: string){
-    this.router.navigateByUrl(path);
+  scrollTo(element: any): void {
+    (document.getElementById(element) as HTMLElement).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    });
   }
 }

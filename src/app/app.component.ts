@@ -16,8 +16,11 @@ export class AppComponent {
   closeMenu(){
     this.menu.close('first');
   }
-  goTo(path: string){
-    this.router.navigateByUrl(path);
-    this.closeMenu();
+  scrollTo(element: any): void {
+    (document.getElementById(element) as HTMLElement).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    });
   }
 }

@@ -113,6 +113,7 @@ ion-content{
 }
 .whatDoesTitleContainer{
   display: flex;
+  text-align: center;
   align-items: center;
   flex-direction: column;
   margin-bottom: 20px;
@@ -166,14 +167,14 @@ ion-content{
     color: #ffff
   }
 .item{
-    width: 20%;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(116, 86, 255, 0.1);
-    border-radius: 10px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(116, 86, 255, 0.1);
+  border-radius: 10px;
+  width: 100%;
     .boxContainer{
       font-weight: 600;
       height: 100%;
@@ -193,8 +194,8 @@ ion-content{
         }
     }
     @media only screen and (max-width: 1024px){
-      width: 80%;
-      height: 200px;
+      width: 85%;
+      height: 150px;
     }
   span{
     font-weight: 600;
@@ -251,6 +252,13 @@ ion-content{
       font-size: 15px;
     }
   }
+  ion-button{
+    font-weight: 600;
+    font-size: 20px;
+    @media only screen and (max-width: 1024px){
+      font-size: 15px;
+    }
+  }
 }
 .containerProject{
   border: 1px solid gray;
@@ -263,9 +271,28 @@ ion-content{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-}
-.a{
-  height: 30%;
+  // margin-bottom: 20px;
 }
 
+.swiper-container{
+  width: 58%;
+  
+  @media only screen and (max-width: 1024px){
+    width: 100%;
+    height: 50%;
+  }
+}
+.swiper-pagination{
+  z-index: inherit;
+}
+.swiper-slide{
+  margin-bottom: 30px;
+  @media only screen and (max-width: 1024px){
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center
 
+  }
+}

@@ -1,16 +1,17 @@
 <section class="headerContainer">
   <div class="logoContainer">
-    <a href=""
+    <a (click)='scrollTo("home")'
       ><span class="textPurpleLogo">Gustavo</span
-      ><span class="textWhiteLogo">Dev</span></a
+      ><span class="textWhiteLogo">Tech</span></a
     >
   </div>
 
   <nav class="anchorContainer">
-    <a class="anchors" href="#">Sobre</a>
-    <a class="anchors" href="#">Formação</a>
-    <a class="anchors" href="#">Projetos</a>
-    <a class="anchors" href="#">Contato</a>
+    <a (click)='scrollTo("home")' class="anchors" >Sobre</a>
+    <a (click)='scrollTo("formation")'class="anchors" >Formação</a>
+    <a (click)='scrollTo("myProjects")'class="anchors">Projetos</a>
+    <a (click)='scrollTo("techs")'class="anchors">Tecnologias</a>
+    <a (click)='scrollTo("contact")'class="anchors" >Contato</a>
   </nav>
   <div class="menuMobileContainer">
     <ion-icon

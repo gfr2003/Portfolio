@@ -15,18 +15,17 @@
           Gosto de jogar video-game, programar, assistir séries e filmes
         </span>
         <div class="btnContainer">
-          <ion-button><ion-icon name="reader-outline"></ion-icon>Download CV</ion-button>
-          <ion-button color="tertiary">Mais</ion-button>
+          <ion-button href="../../assets/gustavo_felix_cv_ptbr.pdf" Download><ion-icon name="reader-outline"></ion-icon>Download CV</ion-button>
         </div>
        
-          <nav class="findMe"><span>Me encontre:</span>  <a class="anchors"href=""><ion-icon name="logo-linkedin"></ion-icon></a>
-            <a class="anchors" href=""><ion-icon name="logo-github"></ion-icon></a>
-            <a class="anchors" href=""><ion-icon name="logo-instagram"></ion-icon></a>
+          <nav class="findMe"><span>Me encontre:</span>  <a class="anchors"href="https://www.linkedin.com/in/gufelix/"target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a class="anchors" href="https://github.com/gfr2003" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            <a class="anchors" href="https://www.instagram.com/gu2003fr/"target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
           </nav> 
        
       </div>
     </div>
-      <img class="imageProfile"src="../.././assets/gustavo_felix-removebg-preview.png" />
+      <img class="imageProfile"src="../.././assets/logo.svg" />
     </section>
 
   <section id="WhatDoes">
@@ -64,23 +63,23 @@
       <h1 class="whiteTitle">Meus Projetos</h1>
     </header>
         <ion-card class="projectCard"><div class="boxContainer"><img src="../../assets/chart-dynamic-premium.png" alt="Controle Financeiro"><span>Dev.Finance$</span><ion-button  target="_blank" href="https://gfr2003.github.io/ProjetoSistFinanceiro/">Ver projeto</ion-button></div></ion-card>
-        <ion-card class="projectCard"><div class="boxContainer"><img src="../../assets/wallet-dynamic-premium.png" alt="Carteira"><span>ByteBank</span><ion-button  target="_blank" href="https://github.com/gfr2003/bytebank">Ver projeto</ion-button></div></ion-card>
+        <ion-card class="projectCard"><div class="boxContainer"><img src="../../assets/wallet-dynamic-premium.png" alt="Carteira"><span>ByteBank</span><ion-button  target="_blank" href="https://github.com/gfr2003/bytebank">Ver código</ion-button></div></ion-card>
         <ion-card class="projectCard"><div class="boxContainer"><img src="../../assets/calender-dynamic-premium.png" alt="Calendario"><span>Agenda de PetShop</span><ion-button  target="_blank" href="https://github.com/gfr2003/API-REST-Node.js">Ver código</ion-button></div></ion-card>
         <ion-card class="projectCard"><div class="boxContainer"><img src="../../assets/scissor-dynamic-premium.png" alt="Tesoura"><span>Agenda para Salões</span> <span>Em breve</span></div></ion-card>
   </section> 
-  <section id="myProjects">
+  <section id="techs">
     <header class="whatDoesTitleContainer">
       <h1 class="whiteTitle">Tecnologias</h1>
     </header>
-    <div class="slider">
-      <ion-card class="item"><div class="boxContainer"><img src="../../assets/html.png" alt="HTML"><span>HTML</span></div></ion-card>
-      <ion-card class="item"><div class="boxContainer"><img src="../../assets/sass-seeklogo.com.svg" alt="SCCS"><span>SCCS</span></div></ion-card>
-      <ion-card class="item"><div class="boxContainer"><img src="../../assets/typescript.svg" alt="TypeScript"><span>TypeScript</span></div></ion-card>
-      <ion-card class="item"><div class="boxContainer"><img src="../../assets/angular-logo.png" alt="Angular"><span>Angular</span></div></ion-card>
-      <ion-card class="item"><div class="boxContainer"><img src="../../assets/node-js.svg" alt="Node"><span>Node</span></div></ion-card>
-      <ion-card class="item"><div class="boxContainer"><img src="../../assets/ionic.svg" alt="Ionic"><span>Ionic</span></div></ion-card>
-      <ion-card class="item"><div class="boxContainer"><img src="../../assets/firebase.svg" alt="Firebase"><span>Firebase</span></div></ion-card>
-    </div>
+      <swiper #swiper [config]="config">
+        <ng-template swiperSlide><ion-card class="item"><div class="boxContainer"><img src="../../assets/html.png" alt="HTML"><span>HTML</span></div></ion-card></ng-template>
+        <ng-template swiperSlide><ion-card class="item"><div class="boxContainer"><img src="../../assets/sass-seeklogo.com.svg" alt="SCCS"><span>SCCS</span></div></ion-card></ng-template>
+        <ng-template swiperSlide><ion-card class="item"><div class="boxContainer"><img src="../../assets/typescript.svg" alt="TypeScript"><span>TypeScript</span></div></ion-card></ng-template>
+        <ng-template swiperSlide><ion-card class="item"><div class="boxContainer"><img src="../../assets/angular-logo.png" alt="Angular"><span>Angular</span></div></ion-card></ng-template>
+        <ng-template swiperSlide><ion-card class="item"><div class="boxContainer"><img src="../../assets/node-js.svg" alt="Node"><span>Node</span></div></ion-card></ng-template>
+        <ng-template swiperSlide><ion-card class="item"><div class="boxContainer"><img src="../../assets/ionic.svg" alt="Ionic"><span>Ionic</span></div></ion-card></ng-template>
+        <ng-template swiperSlide><ion-card class="item"><div class="boxContainer"><img src="../../assets/firebase.svg" alt="Firebase"><span>Firebase</span></div></ion-card></ng-template>
+      </swiper>
   </section> 
 <app-footer></app-footer>
 </ion-content>
