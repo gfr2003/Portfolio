@@ -1,6 +1,6 @@
 <app-header></app-header>
-<ion-content id="corpo">
-<div class="all">
+<ion-content  id="corpo">
+
   <section class="home" id="home">
     <div class="menuText">
       <h1>Olá</h1>
@@ -8,19 +8,79 @@
       <span class="subtitle">Desenvolvedor Full Stack</span>
       <div class="line">____________</div>
       <div class="infoContainer">
-        <span>
+        <span class="grayText">
           Atuando na área desde 2021, cursando Análise e Desenvolvimento
-          de Sistemas no centro universitário UNINTER, procurando sempre aprender e usar as melhores práticas
-          para desenvolver um software de qualidade.
+          de Sistemas no Centro Universitário UNINTER, procurando sempre aprender e usar as melhores práticas
+          para desenvolver um software de qualidade. <br>
+          Gosto de jogar video-game, programar, assistir séries e filmes
         </span>
         <div class="btnContainer">
           <ion-button><ion-icon name="reader-outline"></ion-icon>Download CV</ion-button>
           <ion-button color="tertiary">Mais</ion-button>
         </div>
+       
+          <nav class="findMe"><span>Me encontre:</span>  <a class="anchors"href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a class="anchors" href=""><ion-icon name="logo-github"></ion-icon></a>
+            <a class="anchors" href=""><ion-icon name="logo-instagram"></ion-icon></a>
+          </nav> 
+       
       </div>
     </div>
       <img class="imageProfile"src="../.././assets/gustavo_felix-removebg-preview.png" />
-    </section> 
-</div>
+    </section>
+
+  <section id="WhatDoes">
+    <header class="whatDoesTitleContainer">
+      <h1 class="titleWhatDoes">O que tenho a oferecer</h1>
+      <span class="subtitleWhite">Desenvolvimento de aplicações ponta a ponta</span>
+      <span class="subtitleWhite">mantendo a melhor qualidade e performance</span> 
+    </header>
+
+      <div class="container">
+        <ion-card class="item"><div class="boxContainer"><img src="../../assets/checklist.svg" alt="phone"><span>Análise de Negócios</span></div></ion-card>
+        <ion-card class="item"><div class="boxContainer"><img src="../../assets/mobile.svg" alt="phone"><span>Desenvolvimento App's</span></div></ion-card>
+        <ion-card class="item"><div class="boxContainer"><img src="../../assets/desktop.svg" alt="phone"><span>Desenvolvimento Web</span></div></ion-card>
+      </div>
+  </section> 
+  <section id="titleWhatDoes">
+    <header class="whatDoesTitleContainer">
+      <h1 class="whiteTitle">Minha formação</h1>
+
+    </header>
+
+      <div class="whatDoesTitleContainer">
+        <span class="formationTextPurple"><ion-icon class="anchors" name="school-outline"></ion-icon> Análise e Desenvolvimento de Sistemas - 2021/2023</span>
+        <span class="formationText">Centro Universitário Internacional UNINTER</span>
+        <span class="textWhite"></span>
+      </div>
+      <div class="whatDoesTitleContainer">
+        <span class="formationTextPurple"><ion-icon class="anchors" name="school-outline"></ion-icon> Ensino Médio - 2020</span>
+        <span class="formationText">E.E Zacarias Antônio da Silva</span>
+        <span class="textWhite"></span>
+      </div>
+  </section> 
+  <section id="myProjects">
+    <header class="whatDoesTitleContainer">
+      <h1 class="whiteTitle">Meus Projetos</h1>
+    </header>
+        <ion-card class="projectCard"><div class="boxContainer"><img src="../../assets/chart-dynamic-premium.png" alt="Controle Financeiro"><span>Dev.Finance$</span><ion-button  target="_blank" href="https://gfr2003.github.io/ProjetoSistFinanceiro/">Ver projeto</ion-button></div></ion-card>
+        <ion-card class="projectCard"><div class="boxContainer"><img src="../../assets/wallet-dynamic-premium.png" alt="Carteira"><span>ByteBank</span><ion-button  target="_blank" href="https://github.com/gfr2003/bytebank">Ver projeto</ion-button></div></ion-card>
+        <ion-card class="projectCard"><div class="boxContainer"><img src="../../assets/calender-dynamic-premium.png" alt="Calendario"><span>Agenda de PetShop</span><ion-button  target="_blank" href="https://github.com/gfr2003/API-REST-Node.js">Ver código</ion-button></div></ion-card>
+        <ion-card class="projectCard"><div class="boxContainer"><img src="../../assets/scissor-dynamic-premium.png" alt="Tesoura"><span>Agenda para Salões</span> <span>Em breve</span></div></ion-card>
+  </section> 
+  <section id="myProjects">
+    <header class="whatDoesTitleContainer">
+      <h1 class="whiteTitle">Tecnologias</h1>
+    </header>
+    <div class="slider">
+      <ion-card class="item"><div class="boxContainer"><img src="../../assets/html.png" alt="HTML"><span>HTML</span></div></ion-card>
+      <ion-card class="item"><div class="boxContainer"><img src="../../assets/sass-seeklogo.com.svg" alt="SCCS"><span>SCCS</span></div></ion-card>
+      <ion-card class="item"><div class="boxContainer"><img src="../../assets/typescript.svg" alt="TypeScript"><span>TypeScript</span></div></ion-card>
+      <ion-card class="item"><div class="boxContainer"><img src="../../assets/angular-logo.png" alt="Angular"><span>Angular</span></div></ion-card>
+      <ion-card class="item"><div class="boxContainer"><img src="../../assets/node-js.svg" alt="Node"><span>Node</span></div></ion-card>
+      <ion-card class="item"><div class="boxContainer"><img src="../../assets/ionic.svg" alt="Ionic"><span>Ionic</span></div></ion-card>
+      <ion-card class="item"><div class="boxContainer"><img src="../../assets/firebase.svg" alt="Firebase"><span>Firebase</span></div></ion-card>
+    </div>
+  </section> 
 <app-footer></app-footer>
 </ion-content>
