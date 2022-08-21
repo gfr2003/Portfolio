@@ -12,9 +12,10 @@ SwiperCore.use([Pagination]);
 export class HomePage implements AfterContentChecked, AfterViewInit {
   @ViewChild('swiper') swiper: SwiperComponent;
   config: SwiperOptions = {
-    slidesPerView: 2,
-    spaceBetween: 50,
+    slidesPerView: 1,
+    spaceBetween: 70,
     pagination: true,
+    setWrapperSize:true,
   }
   public slideIndex = 1;
   constructor() {}

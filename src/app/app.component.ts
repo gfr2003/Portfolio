@@ -8,12 +8,12 @@ import { MenuController } from '@ionic/angular';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor(private menu: MenuController,private router: Router) {}
+  constructor(private menu: MenuController, private router: Router) {}
   openMenu() {
     this.menu.enable(true, 'first');
     this.menu.open('first');
   }
-  closeMenu(){
+  closeMenu() {
     this.menu.close('first');
   }
   scrollTo(element: any): void {
@@ -22,5 +22,6 @@ export class AppComponent {
       block: 'start',
       inline: 'nearest',
     });
+    this.closeMenu();
   }
 }
