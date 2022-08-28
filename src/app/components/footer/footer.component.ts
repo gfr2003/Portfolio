@@ -11,14 +11,14 @@ export class FooterComponent implements OnInit {
   formInvalid = false;
   constructor() {}
   ngOnInit() {}
-  removeMessage(){
-    return this.formInvalid = false;
+  removeMessage() {
+    return (this.formInvalid = false);
   }
   sendMail() {
     if (this.contactForm.invalid) {
       return (this.formInvalid = true);
     }
-    // eslint-disable-next-line max-len
-    window.location.href = `mailto:test@example.com?subject=${this.contactForm.value.assunto}&body=${this.contactForm.value.desc}`;
+    window.location.href = `mailto:gustavo.felixr@outlook.com?subject=${this.contactForm.value.assunto}
+    &body=${this.contactForm.value.desc}`;
   }
 }
