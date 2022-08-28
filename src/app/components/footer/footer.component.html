@@ -1,4 +1,4 @@
-<ion-footer id="contact"class="all">
+<ion-footer id="contact" class="all">
   <div class="contactContainer">
     <h1 class="title">Interessado ?</h1>
     <ion-label class="subtitle"
@@ -7,25 +7,47 @@
     <div class="contactSubcontainer">
       <ion-icon class="contactIcons" name="call-outline"></ion-icon>
       <div class="contactItems">
-        <ion-label class="subtitle">Phone</ion-label><a  href="tel:+55(11)93489-0062">+55(11)93489-0062</a>
+        <ion-label class="subtitle">Phone</ion-label
+        ><a href="tel:+55(11)93489-0062">+55(11)93489-0062</a>
       </div>
     </div>
     <div class="contactSubcontainer">
       <ion-icon class="contactIcons" name="mail-outline"></ion-icon>
       <div class="contactItems">
         <ion-label class="subtitle">Email</ion-label
-        ><a href="mailTo:gustavo.felixr@outlook.com">gustavo.felixr@outlook.com</a>
+        ><a href="mailTo:gustavo.felixr@outlook.com"
+          >gustavo.felixr@outlook.com</a
+        >
       </div>
     </div>
   </div>
 
-  <form
-    class="formEmailContainer"
-    method="POST"
-    action="mailto:gustavo.felixr@outlook.com"
-  >
-    <input class="inputsMailForm" autocomplete="off" name="subject" type="text" placeholder="Assunto do E-mail"/>a
-    <textarea class="inputsMailForm" name="body" placeholder="Fique a vontade para tirar dúvidas!"></textarea>
-    <input type="submit" class="buttonSend" value="Enviar" />
-  </form>
+  <div class="formEmailContainer" [formGroup]="contactForm">
+    <input
+      class="inputsMailForm"
+      (keyup)="removeMessage()"
+      formControlName="assunto"
+      autocomplete="off"
+      type="text"
+      placeholder="Assunto do E-mail"
+    />
+    <span class="errorMessage" *ngIf="formInvalid"
+      >Campo assunto é obrigatório!</span
+    >
+    <textarea
+      class="inputsMailForm"
+      (keyup)="removeMessage()"
+      formControlName="desc"
+      placeholder="Fique a vontade para tirar dúvidas!"
+    ></textarea>
+    <span class="errorMessage" *ngIf="formInvalid"
+      >Campo detalhes é obrigatório!</span
+    >
+    <input
+      type="submit"
+      (click)="sendMail()"
+      class="buttonSend"
+      value="Enviar"
+    />
+  </div>
 </ion-footer>
